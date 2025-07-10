@@ -6,7 +6,7 @@
     "python3",
     "telegram",
     "bot",
-    "SHUKLA",
+    "NIYATI",
     "MusicBot",
     "telegram-bot",
     "pyrogram"
@@ -34,7 +34,7 @@
       },
       "OWNER_ID": {
         "description": "The user id of user whom you would like to add as OWNER.",
-        "value": "6762113050",
+        "value": "7168729089",
         "required": true
       },
       "STRING_SESSION": {
