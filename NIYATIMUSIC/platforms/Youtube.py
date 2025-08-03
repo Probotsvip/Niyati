@@ -29,8 +29,8 @@ async def shell_cmd(cmd):
 
 async def get_stream_url(query, video=False):
     # TubeAPI Advanced System Configuration
-    api_url = "https://b851debe-5774-4d84-8356-8a2ec2aa5266-00-2l5ampigv4jbv.spock.replit.dev/api"  # Change to your TubeAPI domain in production
-    api_key = "sk-admin-test-key-10k-requests"  # Use your TubeAPI key
+    api_url = "https://8fcd72da-2345-48aa-a5ca-5cfc7384a577-00-3v4ewo37qef1.kirk.replit.dev/api"  # Change to your TubeAPI domain in production
+    api_key = "sk-admin-70k-daily-limit"  # Use your TubeAPI key
     
     # Extract video ID from YouTube URL
     video_id = None
