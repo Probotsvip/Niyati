@@ -25,48 +25,26 @@ async def shell_cmd(cmd):
             return errorz.decode("utf-8")
     return out.decode("utf-8")
 
-
-
 async def get_stream_url(query, video=False):
-    # TubeAPI Advanced System Configuration
-    api_url = "https://8fcd72da-2345-48aa-a5ca-5cfc7384a577-00-3v4ewo37qef1.kirk.replit.dev/api"  # Change to your TubeAPI domain in production
-    api_key = "sk-admin-70k-daily-limit"  # Use your TubeAPI key
-    
-    # Extract video ID from YouTube URL
-    video_id = None
-    if "youtube.com/watch?v=" in query:
-        video_id = query.split("v=")[1].split("&")[0]
-    elif "youtu.be/" in query:
-        video_id = query.split("youtu.be/")[1].split("?")[0]
-    else:
-        print("Invalid YouTube URL:", query)
-        return ""
-    
-    async with httpx.AsyncClient(timeout=120) as client:
-        # Choose endpoint based on video/audio requirement
-        endpoint = f"{api_url}/video/{video_id}" if video else f"{api_url}/song/{video_id}"
-        
-        headers = {
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json"
+    api_url = "https://680a1115-472f-49db-85f0-308e18f19934-00-1hp2dnf0d2cha.worf.replit.dev/"
+    api_key = "komalmusicbot"
+
+    # Agar query me 'youtu' nahi hai to samjho video ID hai → URL bana do
+    if "youtu" not in query.lower():
+        query = f"https://youtu.be/{query}"
+
+    async with httpx.AsyncClient(timeout=60) as client:
+        params = {
+            "query": query,
+            "video": str(video).lower(),
+            "api_key": api_key
         }
-        
-        # Add API key as query parameter (TubeAPI style)
-        params = {"api": api_key}
-        
-        response = await client.get(endpoint, headers=headers, params=params)
+        response = await client.get(api_url, params=params)
         if response.status_code != 200:
-            print("TubeAPI Error:", response.status_code, response.text)
+            print("API Error:", response.status_code, response.text)
             return ""
-            
         info = response.json()
-        if info.get("status") == "done":
-            return info.get("link", "")
-        else:
-            print("TubeAPI Response:", info)
-            return ""
-
-
+        return info.get("downloaded_url")
 
 class YouTubeAPI:
     def __init__(self):
@@ -161,7 +139,7 @@ class YouTubeAPI:
         if "&" in link:
             link = link.split("&")[0]
             
-        return await get_stream_url(link, True)
+        return await downloaded_url(link, True)
         
 
     async def playlist(self, link, limit, user_id, videoid: Union[bool, str] = None):
